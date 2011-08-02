@@ -1,4 +1,7 @@
 SampleApp::Application.routes.draw do
+#  get "users/new"   #why are we keeping this right now?
+
+  match '/signup', :to => 'users#new'
 
   root :to => 'pages#home'
 
